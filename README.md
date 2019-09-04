@@ -1,24 +1,11 @@
-# README
+# dobehave app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Life got you down? Make a plan for the future -- things you want to do, be, and have before you pass..
 
-Things you may want to cover:
+Notes on intended features, functions, etc: https://www.evernote.com/l/ABHTvHztZ3JI96pqu_-zdm33gO7zAFyrTow
 
-* Ruby version
+## get developing
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Get Ruby 2.6.3
+1. Install Postgres database server and have it running
+1. Run `bin/setup`
