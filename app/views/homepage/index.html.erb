@@ -1,7 +1,3 @@
 <h1>Dobehave</h1>
 
-<ul>
-  <% Board.all.each do |board| %>
-    <li><b><%= board.id %></b> - <%= board.vision.truncate(50) if board.vision.present? %></li>
-  <% end %>
-</ul>
+<%= link_to "Create a new board", new_board_path %>
