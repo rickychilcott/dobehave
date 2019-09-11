@@ -8,6 +8,9 @@ class BoardsController < ApplicationController
 
   # GET /boards/1
   def show
+    @do_things = @board.things.where(type: "do")
+    @be_things = @board.things.where(type: "be")
+    @have_things = @board.things.where(type: "have")
   end
 
   # GET /boards/new

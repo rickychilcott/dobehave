@@ -10,4 +10,20 @@
   <%= @board.vision %>
 </p>
 
+<div class="board_list">
+  <div class="list">
+    <h2>Do</h2>
+    <%= render(partial: "thing", collection: @do_things) || render(partial: "no_things") %>
+  </div>
+
+  <div class="list">
+    <h2>Be</h2>
+    <%= render(partial: "thing", collection: @be_things) || render(partial: "no_things") %>
+  </div>
+
+  <div class="list">
+    <h2>Have</h2>
+    <%= render(partial: "thing", collection: @have_things) || render(partial: "no_things") %>
+  </div>
+</div>
 <%= link_to 'Edit', edit_board_path(@board) %>
