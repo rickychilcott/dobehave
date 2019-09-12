@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/rickychilcott/dobehave.svg?style=svg)](https://circleci.com/gh/rickychilcott/dobehave)
+
 # dobehave app
 
 Life got you down? Make a plan for the future -- things you want to do, be, and have before you pass..
