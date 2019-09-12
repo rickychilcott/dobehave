@@ -9,3 +9,7 @@ Notes on intended features, functions, etc: https://www.evernote.com/l/ABHTvHztZ
 1. Get Ruby 2.6.3
 1. Install Postgres database server and have it running
 1. Run `bin/setup`
+
+## running tests
+
+1. Run `bin/rspec`
