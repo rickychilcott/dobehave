@@ -1,29 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Email:</strong>
+<p class="text text-gray-700">
+  <span class="font-bold">Email:</span>
   <%= @board.email %>
 </p>
 
-<p>
-  <strong>Vision:</strong>
+<p class="text text-gray-700">
+  <span class="font-bold">Vision:</span>
   <%= @board.vision %>
 </p>
 
-<div class="board_list">
-  <div class="list">
-    <h2>Do</h2>
+<div class="flex flex-col md:flex-row">
+  <div class="flex-1 pr-2">
+    <h2 class="text-lg text-center text-blue-800">Do</h2>
     <%= render(partial: "thing", collection: @do_things) || render(partial: "no_things") %>
   </div>
 
-  <div class="list">
-    <h2>Be</h2>
+  <div class="flex-1 px-2">
+    <h2 class="text-lg text-center text-blue-800">Be</h2>
     <%= render(partial: "thing", collection: @be_things) || render(partial: "no_things") %>
   </div>
 
-  <div class="list">
-    <h2>Have</h2>
+  <div class="flex-1 pl-2">
+    <h2 class="text-lg text-center text-blue-800">Have</h2>
     <%= render(partial: "thing", collection: @have_things) || render(partial: "no_things") %>
   </div>
 </div>
-<%= link_to 'Edit', edit_board_path(@board) %>
+
+<div class="flex pt-8">
+  <%= link_to "Edit Board", edit_board_path(@board), class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded" %>
+</div>
+
