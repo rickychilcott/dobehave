@@ -14,16 +14,19 @@
   <div class="flex-1 pr-2">
     <h2 class="text-lg text-center text-blue-800">Do</h2>
     <%= render(partial: "thing", collection: @do_things) || render(partial: "no_things") %>
+    <%= link_to "New 'Do'", new_board_thing_path(board_id: @board.id, type: :do) %>
   </div>
 
   <div class="flex-1 px-2">
     <h2 class="text-lg text-center text-blue-800">Be</h2>
     <%= render(partial: "thing", collection: @be_things) || render(partial: "no_things") %>
+    <%= link_to "New 'Be'", new_board_thing_path(board_id: @board.id, type: :be) %>
   </div>
 
   <div class="flex-1 pl-2">
     <h2 class="text-lg text-center text-blue-800">Have</h2>
     <%= render(partial: "thing", collection: @have_things) || render(partial: "no_things") %>
+    <%= link_to "New 'Have'", new_board_thing_path(board_id: @board.id, type: :have) %>
   </div>
 </div>
 
